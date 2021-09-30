@@ -1,0 +1,261 @@
+/**
+ * Reusable Content & Text Blocks Plugin by Defined Hosting - Admin CSS
+ * Copyright (c) 2017 Defined Hosting (www.definedhosting.com)
+ */
+
+.dh-cb-clearfix:before,
+.dh-cb-clearfix:after {
+	content: ' ';
+	display: table;
+}
+
+.dh-cb-clearfix:after {
+	clear: both;
+}
+
+.dh-cb-admin-info-page-row {
+}
+
+.dh-cb-admin-info-page-column-half {
+	width: 50%;
+	float: left;
+}
+
+.dh-cb-admin-info-page-column-third {
+	width: 33.333%;
+	float: left;
+}
+
+.dh-cb-admin-info-page-column-inner {
+	padding: 0 0 0 20px;
+}
+
+.dh-cb-admin-info-page-column-content {
+	padding: 21px 20px 9px 20px;
+}
+
+.dh-cb-admin-info-page-column-content h2 {
+	margin-top: 0 !important;
+}
+
+.dh-cb-admin-info-page-column-content p, .dh-cb-admin-info-page-column-content li, .dh-cb-admin-info-page-column-content pre {
+	font-size: 1.1em !important;
+	line-height: 1.3em !important;
+}
+
+.dh-cb-admin-info-page-column-half:first-child .dh-cb-admin-info-page-column-inner {
+	padding-left: 0;
+}
+
+.dh-cb-admin-info-page-column-third:first-child .dh-cb-admin-info-page-column-inner {
+	padding-left: 0;
+}
+
+.dh-cb-admin-info-page-column-half:last-child .dh-cb-admin-info-page-column-inner {
+	padding-right: 0;
+}
+
+.dh-cb-admin-info-page-column-third:last-child .dh-cb-admin-info-page-column-inner {
+	padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.dh-cb-admin-info-page-column-half {
+		width: 100%;
+		float: none;
+	}
+
+	.dh-cb-admin-info-page-column-third {
+		width: 100%;
+		float: none;
+	}
+
+	.dh-cb-admin-info-page-column-inner {
+		padding: 0;
+	}
+}
+
+#dh-cb-admin-branding {
+	margin: 10px 0;
+}
+
+#dh-cb-admin-branding img {
+	max-width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+#dh-cb-admin-branding-right {
+	margin: 0 0 0 20px;
+	float: right;
+}
+
+#dh-cb-admin-branding-right a, #dh-cb-admin-branding-right a:link, #dh-cb-admin-branding-right a:active, #dh-cb-admin-branding-right a:visited, #dh-cb-admin-branding-right a:hover {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+#dh-cb-admin-branding-right img {
+	max-width: 100%;
+	margin: 0 0 0 20px !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+.dh-cb-admin-button-container {
+	margin: 10px 0;
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.dh-cb-admin-button-link, .dh-cb-admin-button-link:link, .dh-cb-admin-button-link:active, .dh-cb-admin-button-link:visited {
+	width: 160px !important;
+	margin: 0 !important;
+	padding: 7px 5px !important;
+	border: 0 solid #17675a !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	background: #3ebcc2 !important;
+	color: #ffffff !important;
+	text-align: center !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1.5em !important;
+	text-decoration: none !important;
+	display: block !important;
+	transition: all 0.2s linear !important;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.dh-cb-admin-button-link:hover {
+	width: 160px !important;
+	margin: 0 !important;
+	padding: 7px 5px !important;
+	border: 0 solid #17675a !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	background: #17675a !important;
+	color: #ffffff !important;
+	text-align: center !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1.5em !important;
+	text-decoration: none !important;
+	display: block !important;
+	transition: all 0.2s linear !important;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+i.dh-cb-mce-icon {
+	background-image: url('../images/ls-wp-mce-icon.png');
+}
+
+.dh-cb-notice h2 {
+	margin-top: 0 !important;
+}
+
+.dh-cb-notice-hide-container {
+	margin-bottom: 0 !important;
+	display: none;
+}
+
+.dh-cb-dialog .ui-dialog-titlebar:before {
+	width: 20px;
+	height: 20px;
+	margin: 3px 3px -3px -3px;
+	border: none;
+	background: url('../images/ls-wp-mce-icon.png');
+	background-size: cover;
+	display: inline-block;
+}
+
+.dh-cb-dialog .dh-cb-mce-field-container {
+	min-height: 35px;
+	margin: 10px 0 0;
+}
+
+.dh-cb-dialog .dh-cb-mce-label {
+	margin: 0 0 3px;
+}
+
+.dh-cb-dialog .dh-cb-mce-label label {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.dh-cb-dialog .dh-cb-mce-field .dh-cb-text-input {
+	width: 100% !important;
+	margin-top: 0 !important;
+}
+
+.dh-cb-dialog .dh-cb-mce-field .dh-cb-select-input {
+	width: 100% !important;
+	margin-top: -3px !important;
+}
+
+.dh-cb-dialog .dh-cb-mce-field-radio {
+	margin-top: 2px !important;
+	float: left;
+}
+
+.dh-cb-dialog .dh-cb-mce-field-radio-label {
+	margin-top: 1px !important;
+	margin-left: 5px !important;
+	margin-right: 15px;
+	float: left;
+}
+
+.dh-cb-dialog .dh-cb-mce-button-blue, .dh-cb-dialog .dh-cb-mce-button-blue:link, .dh-cb-dialog .dh-cb-mce-button-blue:active, .dh-cb-dialog .dh-cb-mce-button-blue:visited {
+	width: 100px !important;
+	margin: 0 !important;
+	padding: 7px 5px !important;
+	border: 0 solid #17675a !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	background: #3ebcc2 !important;
+	color: #ffffff !important;
+	text-align: center !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1.5em !important;
+	text-decoration: none !important;
+	display: block !important;
+	transition: all 0.2s linear !important;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	float: right !important;
+}
+
+.dh-cb-dialog .dh-cb-mce-button-blue:hover {
+	width: 100px !important;
+	margin: 0 !important;
+	padding: 7px 5px !important;
+	border: 0 solid #17675a !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	background: #17675a !important;
+	color: #ffffff !important;
+	text-align: center !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1.5em !important;
+	text-decoration: none !important;
+	display: block !important;
+	transition: all 0.2s linear !important;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+	float: right !important;
+}
