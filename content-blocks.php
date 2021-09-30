@@ -7,8 +7,8 @@ Version:     1.0.0
 Author:      Defined Hosting
 Author URI:  http://www.definedhosting.co.uk/
 License:     GPLv3 or later
-GitHub Plugin URI: DefinedHosting/dhseo
-GitHub Plugin URI: https://github.com/DefinedHosting/dhseo
+GitHub Plugin URI: DefinedHosting/dh-content-blocks
+GitHub Plugin URI: https://github.com/DefinedHosting/dh-content-blocks
 */
 
 
