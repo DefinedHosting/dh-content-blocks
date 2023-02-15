@@ -18,7 +18,7 @@ class dh_cb_main {
 	static public $post_type_slug = 'dhcontentblock';
 	static public $post_type_label = 'Content Block';
 	static public $post_type_labels = 'Content Blocks';
-	static public $post_type_menu_icon = 'images/ls-wp-menu-icon.png';
+	static public $post_type_menu_icon = 'images/dh-wp-menu-icon.png';
 	static public $usage_about_page = 'dh_cb_usage_about_page';
 	static public $post_type_shortcode = 'dh_content_block';
 
@@ -78,11 +78,11 @@ class dh_cb_main {
 		add_action( 'admin_enqueue_scripts', __CLASS__ . '::enqueue_scripts' );
 		add_action( 'admin_menu', __CLASS__ . '::admin_menu' );
 		add_filter( 'plugin_action_links_' . self::$plugin_basename, __CLASS__ . '::add_action_links' );
-		add_action( 'admin_notices', __CLASS__ . '::display_general_welcome' );
+		//add_action( 'admin_notices', __CLASS__ . '::display_general_welcome' );
 		add_filter( 'pre_get_posts', __CLASS__ . '::reorder_list' );
 		add_filter( 'manage_' . self::$post_type_slug . '_posts_columns', __CLASS__ . '::set_column_titles' );
 		add_action( 'manage_' . self::$post_type_slug . '_posts_custom_column', __CLASS__ . '::set_columns', 10, 2 );
-		add_action( 'contextual_help', __CLASS__ . '::contextual_help', 10, 3 );
+		//add_action( 'contextual_help', __CLASS__ . '::contextual_help', 10, 3 );
 		add_filter( 'enter_title_here', __CLASS__ . '::change_title_text' );
 		add_filter( 'mce_external_plugins', __CLASS__ . '::mce_plugin' );
 		add_filter( 'mce_buttons', __CLASS__ . '::mce_button' );
@@ -281,7 +281,7 @@ class dh_cb_main {
 		if ( ( $current_screen->post_type == self::$post_type_slug ) && ( $current_screen->id != self::$post_type_slug . '_page_' . self::$usage_about_page ) ) {
 			$screen->remove_help_tabs();
 
-			$content_prefix  = '<div class="dh-cb-admin-info-page-column-content"><div id="dh-cb-admin-branding-right"><a href="http://www.definedhosting.com/" target="_blank"><img src="' . esc_attr( self::$plugin_url ) . 'images/ls-wp-admin-branding.png" /></a></div>';
+			$content_prefix  = '<div class="dh-cb-admin-info-page-column-content"><div id="dh-cb-admin-branding-right"><a href="http://www.definedhosting.com/" target="_blank"><img src="' . esc_attr( self::$plugin_url ) . 'images/dh-wp-admin-branding.png" /></a></div>';
 			$content_postfix = '</div>';
 
 			$help_screens = array(
@@ -632,7 +632,7 @@ class dh_cb_main {
 		echo '<div class="postbox">';
 		echo '<div class="inside">';
 		echo '<div class="ls-bw-admin-info-page-column-content">';
-		echo '<div id="ls-bw-admin-branding"><a href="http://www.definedhosting.com/" target="_blank"><img src="' . esc_attr( self::$plugin_url ) . 'images/ls-wp-admin-branding.png"></a></div>';
+		echo '<div id="ls-bw-admin-branding"><a href="http://www.definedhosting.com/" target="_blank"><img src="' . esc_attr( self::$plugin_url ) . 'images/dh-wp-admin-branding.png"></a></div>';
 		echo '<h2>Help &amp; More</h2>';
 		echo '<p>We have designed our plugin to be intuitive and easy for someone with a fair amount of WordPress experience. We have also tried to make this documentation as extensive as it needs to be without confusing things.</p>';
 		echo '<p>However, if you have any questions or need help, then help is at hand. Please feel free to contact us – either through the <a href="http://www.definedhosting.com/contact/" target="_blank">contact form</a> on our website or through the <a href="https://wordpress.org/support/plugin/definedhosting-content-blocks" target="_blank">WordPress.org support system</a>.</p>';
@@ -1014,7 +1014,7 @@ class dh_cb_main {
 				} else {
 					$message = esc_html( __( 'If you are new to the plugin, full usage instructions can be found on the ', 'definedhosting-content-blocks-text-domain' ) ) . ' <a href="' . admin_url( 'edit.php?post_type=' . self::$post_type_slug . '&page=' . self::$usage_about_page ) . '">' . esc_html( __( 'Usage & About', 'definedhosting-content-blocks-text-domain' ) ) . '</a> ' . esc_html( __( 'page ... ', 'definedhosting-content-blocks-text-domain' ) ) . '<em>' . esc_html( __( 'Enjoy!', 'definedhosting-content-blocks-text-domain' ) ) . '</em>';
 				}
-				self::display_notice( 'general-welcome', $heading, $message, true, true );
+				//self::display_notice( 'general-welcome', $heading, $message, true, true );
 				self::update_option( 'notice-impression-count-general-welcome', $impression_count + 1 );
 			}
 		}
