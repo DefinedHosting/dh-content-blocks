@@ -55,7 +55,7 @@ class dh_cb_widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
-
+		$_SESSION['original_post_id'] = get_the_ID(); 
 		$title = '';
 		$cbid  = '';
 		$para  = '';
